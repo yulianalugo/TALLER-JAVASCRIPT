@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container text-center">
+        <div class="display 2">Ventas</div>
+        <table class="table">
+            <tr>
+                <td>Tipo de dulce</td>
+                <td>Cantidad</td>
+            </tr>
+                <td>
+                    <select id="TipoDulce" class="form-control" onchange="calcular()">
+                        <option value="1">Dulce fresco</option>
+                        <option value="2">Dulce con descuento</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Cantidad" class="form-control" onchange="calcular()">
+                        <script>
+                            for (var i = 0; i <=50; i++){
+                                document.write("<option value='"+i+"'>"+i+"</option>");
+                            }
+                        </script>
+                    </select>
+                </td>
+            <tr>
+            </tr>
+        </table>
+        <table class="table">
+            <tr>
+                <td>Total:</td>
+                <td><span id="sueldoBase"></span></td>
+            </tr>
+            <tr>
+                <td>Precio normal:</td>
+                <td><span id="1"></span></td>
+            </tr>
+            <tr>
+                <td>Descuento:</td>
+                <td><span id="2"></span></td>
+            </tr>
+        </table>
+
+    </div>
+    
+</body>
+</html>
